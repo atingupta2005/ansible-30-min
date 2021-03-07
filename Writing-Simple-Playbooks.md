@@ -4,15 +4,15 @@ vim install_nginx_wget.yaml
 ```
 ---
  - name: This is a play to install wget and nginx packages on the web servers group
-   hosts: web
+   hosts: all
    gather_facts: no
    become: yes
    tasks:
    - name: Installing nginx pkg
-     yum: name=nginx state=present
+     apt: name=nginx state=present update_cache=yes
      become: yes
    - name: Installing wget pkg
-     yum: name=wget state=present
+     apt: name=wget state=present update_cache=yes
      become: yes
 ```
 

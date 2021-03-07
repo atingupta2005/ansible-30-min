@@ -1,4 +1,5 @@
 # Installation:
+ - sudo apt update
  - git clone https://github.com/atingupta2005/ansible-30-min.git
  - cd ansible-30-min
  - sudo apt -y install software-properties-common
@@ -20,13 +21,13 @@
  - ansible-inventory -i hosts --list
 
 # Deploy Public Key to host
- - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@138.91.140.75
- - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@40.83.249.79
+ - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@52.152.231.15
+ - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@52.150.11.244
 
 # Test the key
- - ssh -i ~/.ssh/demo_id_rsa demouser@138.91.140.75
+ - ssh -i ~/.ssh/demo_id_rsa demouser@52.152.231.15
    - exit
- - ssh -i ~/.ssh/demo_id_rsa demouser@40.83.249.79
+ - ssh -i ~/.ssh/demo_id_rsa demouser@52.150.11.244
    - exit
 
 # Test Ansible is able to conenct to all hosts
