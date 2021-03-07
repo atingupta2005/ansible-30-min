@@ -1,6 +1,6 @@
 # Installation:
  - git clone https://github.com/atingupta2005/ansible-30-min.git
- - cd ansible-demo
+ - cd ansible-30-min
  - sudo apt -y install software-properties-common
  - sudo apt-add-repository ppa:ansible/ansible
  - sudo apt update
